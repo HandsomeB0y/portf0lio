@@ -1,0 +1,274 @@
+/* Fichier CSS */ 
+* {
+	margin:0;
+	border:0;
+	padding:0;
+	outline:0;
+	transition: all 1s;
+	box-sizing:border-box;
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+	background-color: #FFFFFF;
+	background-image:url(../images/fon.jpg);
+	background-size:cover;
+}
+
+#globale {
+	width: 80%;
+	margin: 0 auto;
+	background-color : white;
+}
+
+header {
+	height:6.5em;
+	background-color: #FFFFFF;
+	background-image:url(../images/fond.jpg);
+	outline-width:0em;
+	outline-color:#A9A9A9;
+	outline-style:solid;
+	margin:0% 0% 5% 0%;
+	display: flex;
+}
+
+#logo {
+	float:left;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	background-size : 100% 100% ;
+    width : 20% ;
+	height : inherit ;
+}
+
+#nom {
+	float:left;
+	width: 80%;
+	height: inherit;
+	padding: 0em 0 0 0; 
+	text-align:center;
+	color: #04356C;
+}
+
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+    text-align: center;
+	background-color:#37383A;
+	padding:10px;
+	
+}
+#menu-deroulant li {
+    display: inline-block;
+	padding:20px;
+}
+
+#menu-deroulant li:first-child:hover, li:nth-child(2):hover, li:nth-child(3):hover, li:last-child:hover, li:last-child li:hover{
+	background-color:rgba(234,97,8,0.8);
+}
+
+#menu-deroulant ul li {
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:white;
+}
+#menu-deroulant ul {
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+	background-color:#37383A;
+}
+#menu-deroulant li:hover ul {
+    left: auto;
+}
+
+#page {
+	min-height:10em;
+	background-color:white;
+	color:#04358C;	
+}
+
+#sec1 {
+	border-style:solid;
+	border-color: #4186D3;
+	text-align:center;
+	padding-bottom:1.85%;
+}
+
+.test img{
+	width:80%;
+	margin-left:1%;
+}
+
+article {
+	background: #FFFFFF;
+}
+
+article {
+	padding: 0%;
+	border: solid black 1px;
+	border-width: 0.1em;
+	border-style: solid;
+	border-color: grey;
+	border-radius: 0.1em;
+	box-shadow: 4px 4px 4px #aaa;
+}
+
+article video,audio {
+	margin: 2%;
+	max-width:90%;
+}
+
+.piano h2 {
+	background: url(../images/piano.png) no-repeat #EEEEEE;
+    background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.basket h2 {
+	background: url(../images/basket.png) no-repeat #EEEEEE;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.jeuvideo h2 {
+	background: url(../images/jeuvideo.png) no-repeat #EEEEEE;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.cuisine h2 {
+	background: url(../images/burger.png) no-repeat #EEEEEE;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.cuisine {
+	padding-bottom:3%;
+}
+
+.autres{
+	margin-bottom:1%;
+}
+
+.accueil {
+	width:80%;
+	margin-left:10%;
+}
+
+.primaire {
+	padding-bottom:3%;
+}
+
+.college {
+	padding-bottom:3%;
+}
+
+.lycee {
+	padding-bottom:3%;
+}
+
+.dut {
+	padding-bottom:3%;
+}
+
+.stage {
+	padding-bottom:3%;
+}
+
+object {
+	width:100%;
+	border:0px solid black;
+}
+
+footer {
+	clear:both;
+	border-width:0em 0.2em 0.2em 0.2em;
+	border-width:0;
+	border-style: solid;
+	border-color: #4186D3;
+	background-color:#37383A;
+	opacity: 1;
+	text-align: center;
+	color:white;
+	position:fixed;
+	bottom:0;
+	width:100%;
+}
+
+form {
+	margin:auto 10%;
+	border:1px solid black;
+	background-color: #CCCCCC;
+}
+
+fieldset {padding-left:30; text-align:left; width:50em}
+label {float:left; width:12em; text-align:center}
+input {border: 1px solid grey:}
+
+input.input {
+	display:block;
+	height:2em;
+	width:12em;
+}
+
+input.adresse {width:22em:}
+
+.message_accueil {
+	text-align:center;
+}
+
+.journee {
+	text-align:center;
+}
+
+img.centre {
+	display:justify;
+    max-width: 100%;
+	height: auto;
+}
+
+@media only screen and (max-width : 800px) {
+	#logo {
+	background-image: none;
+	width: 100%;
+	}
+	
+	#nom {
+		width: 100%;
+		position: absolute;
+		text-align: center;
+	}
+	
+	header {
+	height:6.5em;
+	background-color: #FFFFFF;
+	background-image:none;
+	width:100%;
+	}
+	
+	#globale {
+	width: 100%;
+	}
+	
+	#menu-deroulant li {
+	display:flex;
+	justify-content:center;
+	border:1px solid white;
+	}
+	
+	#menu-deroulant ul {
+    width:90%;
+	margin-top:8%;
+	}	
+}
