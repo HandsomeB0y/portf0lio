@@ -247,7 +247,7 @@ input[type=text], textarea {
 }
 
 #subject,#lname,#fname {
-	width:80%
+	width:80%;
 }
 
 label {
