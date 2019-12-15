@@ -238,13 +238,16 @@ img.centre {
 	height: auto;
 }
 
-input[type=text], select, textarea{
-  width: 100%;
+input[type=text], textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+}
+
+#subject,#lname,#fname {
+	width:80%
 }
 
 label {
